@@ -1,9 +1,17 @@
-const Card = ({ children, className = "" }) => {
+const baseSizes = {
+  h1: "text-3xl font-bold",
+  h2: "text-2xl font-semibold",
+  h3: "text-xl font-semibold",
+  h4: "text-lg font-medium",
+};
+
+const Heading = ({ as = "h2", children, className = "", ...props }) => {
+  const Tag = as;
   return (
-    <div className={`w-full bg-white rounded-2xl shadow-lg p-8 ${className}`}>
+    <Tag className={`${baseSizes[as] || baseSizes.h2} text-gray-800 ${className}`} {...props}>
       {children}
-    </div>
+    </Tag>
   );
 };
 
-export default Card;
+export default Heading;

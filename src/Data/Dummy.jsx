@@ -1,22 +1,33 @@
-// Dummy user untuk login
+// Data akun login sesuai ketentuan UTS NIM A11.2021.13361
 export const dummyUser = {
-  email: "admin@mail.com",
-  password: "123456",
+  email: "13361@mail.com",
+  password: "13361",
   name: "Admin",
 };
 
-// Dummy data mahasiswa
-export const mahasiswaList = [
+export const dosenList = [
   {
-    nim: "20211001",
-    nama: "Budi Santoso",
+    nidn: "1202113361",
+    nama: "Mario Ignatius Surya Nugraha",
+    mataKuliah: "Pemrograman Sisi Klien",
+    status: "Aktif",
   },
   {
-    nim: "20211002",
-    nama: "Siti Aminah",
+    nidn: "0011223344",
+    nama: "Dr. Budi Santoso, M.Kom.",
+    mataKuliah: "Basis Data",
+    status: "Aktif",
   },
   {
-    nim: "20211003",
-    nama: "Ahmad Fauzi",
+    nidn: "0022334455",
+    nama: "Siti Aminah, M.Kom.",
+    mataKuliah: "Rekayasa Perangkat Lunak",
+    status: "Cuti",
+  },
+  {
+    nidn: "0033445566",
+    nama: "Ahmad Fauzi, M.Cs.",
+    mataKuliah: "Kecerdasan Buatan",
+    status: "Aktif",
   },
 ];

@@ -1,12 +1,13 @@
+
+import { useParams } from "react-router-dom";
+
 import Card from "@/Pages/Admin/Components/Card";
 import Heading from "@/Pages/Admin/Components/Heading";
 
 import { mahasiswaList } from "@/Data/Dummy";
 
 const MahasiswaDetail = () => {
-
-  const path = window.location.pathname;
-  const nim = path.split("/").pop();
+  const { nim } = useParams();
 
   const mahasiswa = mahasiswaList.find((m) => m.nim === nim);
 
@@ -16,7 +17,10 @@ const MahasiswaDetail = () => {
 
   return (
     <Card>
-      <Heading as="h2" className="mb-4 text-left">Detail Mahasiswa</Heading>
+      <Heading as="h2" className="mb-4 text-left">
+        Detail Mahasiswa
+      </Heading>
+
       <table className="table-auto text-sm w-full">
         <tbody>
           <tr>

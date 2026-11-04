@@ -1,7 +1,2 @@
-import Login from "./Pages/Auth/Login/Login";
-
-const App = () => {
-  return <Login />;
-};
-
+const App = () => null;
 export default App;

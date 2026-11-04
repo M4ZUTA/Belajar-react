@@ -1,5 +1,5 @@
 const variantClasses = {
-  primary: "bg-blue-600 hover:bg-blue-700 text-white",
+  primary: "bg-orange-500 hover:bg-orange-600 text-white",
   secondary: "bg-gray-600 hover:bg-gray-700 text-white",
   warning: "bg-yellow-500 hover:bg-yellow-600 text-white",
   info: "bg-cyan-600 hover:bg-cyan-700 text-white",
@@ -12,7 +12,14 @@ const sizeClasses = {
   lg: "px-6 py-3 text-lg",
 };
 
-const Button = ({ children, type = "button", variant = "primary", size = "md", className = "", ...props }) => {
+const Button = ({
+  children,
+  type = "button",
+  variant = "primary",
+  size = "md",
+  className = "",
+  ...props
+}) => {
   return (
     <button
       type={type}

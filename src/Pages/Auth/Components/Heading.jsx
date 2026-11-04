@@ -1,3 +1,4 @@
+
 const baseSizes = {
   h1: "text-4xl font-bold",
   h2: "text-3xl font-semibold",
@@ -11,15 +12,24 @@ const Heading = ({
   children,
   className = "",
   align = "center",
-  color = "text-blue-600",
+  color = "text-orange-600",
   spacing = "mb-6",
   ...props
 }) => {
   const Tag = as;
   const baseClass = baseSizes[as] || baseSizes.h1;
 
+  const alignment = {
+    left: "text-left",
+    center: "text-center",
+    right: "text-right",
+  }[align] || "text-center";
+
   return (
-    <Tag className={`${baseClass} text-${align} ${color} ${spacing} ${className}`} {...props}>
+    <Tag
+      className={`${baseClass} ${alignment} ${color} ${spacing} ${className}`}
+      {...props}
+    >
       {children}
     </Tag>
   );
