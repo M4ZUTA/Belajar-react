@@ -29,9 +29,3 @@ Aplikasi UTS Pemrograman Sisi Klien berbasis React, Vite, Tailwind CSS, dan Reac
 
 - Email: `13361@mail.com`
 - Password: `13361`
-
-## Catatan sebelum pengumpulan
-
-- Ganti teks `Nama Sendiri` pada data dosen pertama di `src/Data/Dummy.jsx` dengan nama lengkap mahasiswa.
-- Data dosen disimpan pada `localStorage` dengan key `dosen`.
-- Untuk mengulang data awal saat pengujian, hapus key `dosen` dari Local Storage browser.
